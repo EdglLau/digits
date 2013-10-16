@@ -46,4 +46,12 @@ public class ContactDB {
     }
     return contact;
   }
+  
+  
+  public static void deleteContact(long id) {
+    contacts.remove(id);
+    
+  }
+  
+  
 }

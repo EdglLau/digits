@@ -52,4 +52,9 @@ public class Application extends Controller {
     }
     
   }
+  
+  public static Result deleteContact(long id) {
+    ContactDB.deleteContact(id);
+    return ok(Index.render(ContactDB.getContacts()));
+  }
 }
